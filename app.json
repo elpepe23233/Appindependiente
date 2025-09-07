@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "ISUJApp",
-    "slug": "ISUJApp",
+    "name": "appm",
+    "slug": "appm",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/LOGO-CIRCULAR.png",
+    "icon": "./assets/onlineshopping.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/LOGO-CIRCULAR.png",
+      "image": "./assets/onlineshopping.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

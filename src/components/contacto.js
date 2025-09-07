@@ -11,7 +11,7 @@ export default function ContactoScreen() {
     const [error, setError] = useState('');
    const handleEnviar = () => {
         if (!nombre || !correo || !mensaje) {
-      setError('Formulario vacio, llenar formulario por favor.');
+      setError('Llenar formulario por favor.');
       return;
     }
  setError('');
@@ -25,35 +25,36 @@ export default function ContactoScreen() {
     
     <ScrollView style={styles.container}>
     
-        <Text style = {styles.tittle}>Información de Contacto</Text>
+        <Text style = {styles.tittle}>Información de Nuestro local</Text>
         
     <View style= {styles.infoBox}>
       <Ionicons name="location-outline" size={35} color="#333" />
       <View>
         <Text style={styles.infoTitle} > Dirección</Text>
-        <Text style={styles.infoText} >Av. de la Prensa N37-123 y Cuero y Caicedo</Text>
+        <Text style={styles.infoText} >Av. La lorena calle ibarra</Text>
         </View>
         </View>
 
     <View style= {styles.infoBox}>
-      <Ionicons name="location-outline" size={35} color="#333" />
+      <Ionicons name="call-outline" size={35} color="#333" />
       <View>
         <Text style={styles.infoTitle} > Telèfono</Text>
-        <Text style={styles.infoText} >+593 2-244-0000</Text>
+        <Text style={styles.infoText} >+593 2-243-3000</Text>
         </View>
         </View>
 
             <View style= {styles.infoBox}>
-      <Ionicons name="location-outline" size={35} color="#333" />
+      <Ionicons name="mail-outline" size={35} color="#333" />
       <View>
         <Text style={styles.infoTitle} > Correo Electrónico</Text>
-        <Text style={styles.infoText} >info@isujapon.edu.ec</Text>
+        <Text style={styles.infoText} >AppM2005@hotmail.com</Text>
         </View>
         </View>
 
 
 
-            <Text style={styles.tittle}>Formulario de contacto</Text>
+            <Text style={styles.tittle}>¡Envianos tus comentarios!</Text>
+            <Text style={styles.infoText} >Usamos los comentarios como guía para mejorar el servicio de nuestros clientes!</Text>
             <View>
                <Text  > Nombre</Text>
                <TextInput placeholder='Nombre' style={styles.input}           value={nombre}

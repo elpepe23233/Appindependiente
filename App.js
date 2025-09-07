@@ -7,8 +7,8 @@ import { Ionicons } from '@expo/vector-icons';
 //importar pantallas 
 import InicioScreen from './src/components/inicio';
 import ContactoScreen from './src/components/contacto';
-import CarrerasScreen from './src/components/carreras';
-import AdmisionesScreen from './src/components/admisiones';
+import BuscarScreen from './src/components/buscar';
+import AcercadeScreen from './src/components/acercade';
 const Tab=createBottomTabNavigator();
 
 export default function App() {
@@ -19,11 +19,11 @@ export default function App() {
          screenOptions={{
           //estilos de la parte superior
           headerTitleAlign:'center', 
-            headerStyle: { backgroundColor: "#5a00d8ff" },
-            headerTintColor: "#fff", 
+            headerStyle: { backgroundColor: "#004214ff" },
+            headerTintColor: "#ffffffff", 
             //estilos de la parte inferior
             
-            tabBarStyle: { backgroundColor: "#202020ff" }, 
+            tabBarStyle: { backgroundColor: "#009b53ff" }, 
          }}>
             
           <Tab.Screen name= "Inicio" component={InicioScreen }  options={{ //optimizar este codigo para llamar funcion de manera rapida
@@ -38,13 +38,13 @@ export default function App() {
         <Ionicons name="person" size={size} color={color} />
       ),
     }} />
-          <Tab.Screen name= "Carreras" component={CarrerasScreen}
+          <Tab.Screen name= "Carreras" component={BuscarScreen}
               options={{
       tabBarIcon: ({ color, size }) => (
         <Ionicons name="school-outline" size={size} color={color} />
       ),
     }} />
-          <Tab.Screen name= "Admisiones" component={AdmisionesScreen}
+          <Tab.Screen name= "Acerca de" component={AcercadeScreen}
            options={{
       tabBarIcon: ({ color, size }) => (
         <Ionicons name="document-text-outline" size={size} color={color} />
