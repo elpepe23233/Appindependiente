@@ -38,10 +38,10 @@ export default function App() {
         <Ionicons name="person" size={size} color={color} />
       ),
     }} />
-          <Tab.Screen name= "Carreras" component={BuscarScreen}
+          <Tab.Screen name= "Buscar" component={BuscarScreen}
               options={{
       tabBarIcon: ({ color, size }) => (
-        <Ionicons name="school-outline" size={size} color={color} />
+        <Ionicons name="search-outline" size={size} color={color} />
       ),
     }} />
           <Tab.Screen name= "Acerca de" component={AcercadeScreen}
